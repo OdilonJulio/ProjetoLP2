@@ -7,10 +7,12 @@ public class Bem {
 	private Localizacao localizacao;
 	private Categoria categoria;
 
-	public Bem(long codigo, String nome, String descricao) {
+	public Bem(long codigo, String nome, String descricao, Localizacao localizacao, Categoria categoria) {
 		this.codigo = codigo;
 		this.nome = nome;
 		this.descricao = descricao;
+		this.localizacao = localizacao;
+		this.categoria = categoria;
 	}
 
 	public long getCodigo() {
@@ -24,18 +26,23 @@ public class Bem {
 	public String getDescricao() {
 		return this.descricao;
 	}
-	
+
 	public Localizacao getLocalizacao() {
 		return localizacao;
 	}
-	
+
 	public void setLocalizacao(Localizacao localizacao) {
 		this.localizacao = localizacao;
 	}
 
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
 	@Override
 	public String toString() {
-		return "[" + this.codigo + "; " + this.nome + "; " + this.descricao + "; " + this.localizacao + "; " + this.categoria + "]";
+		return "[" + this.codigo + "; " + this.nome + "; " + this.descricao + "; " + this.localizacao + "; "
+				+ this.categoria + "]";
 	}
 
 	@Override
