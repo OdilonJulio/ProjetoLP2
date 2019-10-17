@@ -45,10 +45,10 @@ public class Cadastro {
 		throw new IllegalArgumentException("Nenhum nome/descrição correspondentes encontrados.");
 	}
 
-	public void movimentarBem(Bem bem, String nomeNovaLocalizacao, String descricaoNovaLocalizacao) {
+	public void movimentarBem(Bem bem, Localizacao novaLocalizacao) {
 		for (Bem bem2 : bens) {
 			if (bem2.equals(bem)) {
-				bem2.setLocalizacao(nomeNovaLocalizacao, descricaoNovaLocalizacao);
+				bem2.setLocalizacao(novaLocalizacao);
 			}
 		}
 	}

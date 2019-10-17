@@ -29,8 +29,8 @@ public class Bem {
 		return localizacao;
 	}
 	
-	public void setLocalizacao(String nome, String descricao) {
-		this.localizacao = new Localizacao(nome, descricao);
+	public void setLocalizacao(Localizacao localizacao) {
+		this.localizacao = localizacao;
 	}
 
 	@Override
