@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="bot-telegram-lip2/src/test/java/|bot-telegram-lip2/src/main/java/|patrimony_bot/src/main/java/" kind="src" path=""/>
+	<classpathentry kind="src" path="bot-telegram-lip2/src/main/java"/>
+	<classpathentry kind="src" path="bot-telegram-lip2/src/test/java"/>
+	<classpathentry kind="src" path="patrimony_bot/src/main/java"/>
+	<classpathentry kind="output" path="bot-telegram-lip2/target/classes"/>
+</classpath>
